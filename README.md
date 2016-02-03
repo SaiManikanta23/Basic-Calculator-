@@ -1,7 +1,9 @@
 This is a basic calculator apple mobile applications.
 
-It contains operations like +, - .. sin, cos, tan, log10, x power n etc.
+It contains operations like +, - .. sin, cos, tan, log10, x power n, etc.
+
 This is my first IOS application built using xcode application and swift programming language.
+
 I have mentioned comments in the code for each of the operation that i have performed in the calculator, you can view the comments in the viewcontroller.swift file, if any changes or extra additions to be made it would be highly appreciated if you could fork or help me out in doing so.
 
 In the operations defined for the sin, cos and tan i have converted the input from radians to degree for easy usuage as most of us are familiar with degree results, the input for the operations like square root, cos, sin, tan etc are as follows :
