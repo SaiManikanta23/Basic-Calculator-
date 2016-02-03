@@ -6,7 +6,7 @@ This is my first IOS application built using XCode  and swift programming langua
 
 I have mentioned comments in the code for each of the operation that i have performed in calculator, you can view the comments in  viewController.swift file.
 
-if any changes or extra additions to be made it would be highly appreciated if you could fork or help me out in doing so.
+if any changes or extra additions to be made it would be highly appreciated if you could pull a request or help me out in doing so.
 
 In the operations defined for sin, cos and tan i have converted the input from radians to degree for easy usuage as most of us are familiar with degree results,  input for  operations like square root, cos, sin, tan etc are as follows :
 
