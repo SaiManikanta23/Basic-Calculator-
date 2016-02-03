@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  BasicCalculator
 //
-//  Created by Manikanta Mahesh Byra on 2/1/16.
+//  Created by Sai Manikanta on 2/1/16.
 //  Copyright © 2016 Sai Manikanta. All rights reserved.
 //
 
@@ -18,10 +18,13 @@ class ViewController: UIViewController {
      var result = Float()
      var operation = ""
      
+     // dot function
     @IBAction func dot(sender: AnyObject) {
      let dot = sender.currentTitle
     outputScreen.text = outputScreen.text! + dot!!
      }
+     
+     // Input Numbers
 
     @IBAction func numbers(sender: AnyObject) {
      let numbers = sender.currentTitle
@@ -42,44 +45,68 @@ class ViewController: UIViewController {
     @IBAction func equals(sender: AnyObject) {
      secondNumber = Float(outputScreen.text!)!
      if operation == "+"
+     // Addition Operation
      {
           result = firstNumber + secondNumber
-     } else if operation == "-"
+     } 
+     
+     // Subraction operation
+     else if operation == "-"
      {
           result = firstNumber - secondNumber
-     }else if operation == "sin"
+     }
+     // sin function of trigonometry, Converting radians to degree for better known results
+     else if operation == "sin"
      {
           result = sin(Float(M_PI) * (firstNumber/180))
-     } else if operation == "X"
+     } 
+     // Multiplication operation
+     else if operation == "X"
      {
           result = firstNumber * secondNumber
-     } else if operation == "÷"
+     } 
+     // Division Operation
+     else if operation == "÷"
      {
           result = firstNumber / secondNumber
-     } else if operation == "√"
+     } 
+     // Square root for the number
+     else if operation == "√"
      {
         result = sqrt(firstNumber)
         } else if operation == "1/x"
      {
         result = 1 / firstNumber
-     }else if operation == "cos"
+     }
+     // cosine operation from trigonometry
+     else if operation == "cos"
      {
         result = cos(Float(M_PI) * (firstNumber/180))
-     }else if operation == "tan"
+     }
+     // Similiarlly tan function from trigonometry
+     else if operation == "tan"
      {
         result = tan(Float(M_PI) * (firstNumber/180))
-        } else if operation == "%"
+        } 
+        //percentage operation
+        else if operation == "%"
      {
         result = ( firstNumber * secondNumber ) / 100
-        } else if operation == "log10"
+        } 
+        // logarithm function with base 10
+        else if operation == "log10"
      {
         result = log10 ( firstNumber )
-        } else if operation == "xⁿ"
+        } 
+        // power function with number x having power n
+        else if operation == "xⁿ"
      {
         result = powf(firstNumber, secondNumber)
         }
      outputScreen.text = "\(result)"
     }
+    
+    //All clear function clears the screen and operations that we have done before, here i am converting output text to Int for better result
      @IBAction func allClear(sender: AnyObject) {
           firstNumber = 0
           secondNumber = 0
