@@ -2,7 +2,7 @@
 //  BasicCalculatorUITests.swift
 //  BasicCalculatorUITests
 //
-//  Created by Manikanta Mahesh Byra on 2/1/16.
+//  Created by Sai Manikanta on 2/1/16.
 //  Copyright © 2016 Sai Manikanta. All rights reserved.
 //
 
