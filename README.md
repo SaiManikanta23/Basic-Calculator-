@@ -1,4 +1,4 @@
-This is a basic calculator apple mobile applications.
+This is a basic calculator for IOS mobile applications.
 
 It contains operations like +, - .. sin, cos, tan, log10, x power n, etc.
 
